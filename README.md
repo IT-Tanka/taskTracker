@@ -1,75 +1,55 @@
-# Nuxt Minimal Starter
+# 📝Task Tracker Application (Trello/Jira-like)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a simplified version of a task tracker application similar to Trello or Jira, built with Vue.js. The application allows users to manage tasks with different statuses, priorities, and responsible people. It also supports task drag-and-drop functionality between columns (statuses).
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- **Task Management**: Users can create, edit, and delete tasks.
+- **Task Fields**: Each task includes the following fields:
+  - Title
+  - Description
+  - Assignee
+  - Responsible person
+  - Status (TODO, In Progress, Done)
+  - Priority
+- **Dashboard**: Tasks are organized into columns based on their statuses.
+- **Drag-and-Drop**: Tasks can be dragged between columns to change their status.
+- **Light/Dark Mode**: The application supports both light and dark themes.
+- **Responsive Design**: The app is fully responsive and works on any screen size.
 
-```bash
-# npm
-npm install
+## Technologies Used
 
-# pnpm
-pnpm install
+- **Vue.js**: Main framework for building the frontend.
+- **Vuex**: Global state management.
+- **Tailwind CSS**: For styling.
+- **Vue Draggable**: For drag-and-drop functionality.
 
-# yarn
-yarn install
+## How to Run the Project
 
-# bun
-bun install
-```
+Follow the steps below to run the project locally.
 
-## Development Server
+### Prerequisites
 
-Start the development server on `http://localhost:3000`:
+Make sure you have the following tools installed on your machine:
 
-```bash
-# npm
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
+
+### Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/task-tracker.git
+   cd task-tracker
+   
+2.  Install the required dependencies:
+   npm install
+
+
+3.  Run the application in development mode:  
 npm run dev
 
-# pnpm
-pnpm dev
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
+The app will be available at http://localhost:3000 by default.
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
