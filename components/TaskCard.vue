@@ -1,5 +1,5 @@
 <template>
-    <div class="task-card cursor-pointer  p-4 bg-white rounded shadow mb-8 sm:mb-2 relative max-w-[360px] w-full bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText ">
+    <div class="task-card cursor-grab active:cursor-grabbing  p-4 bg-white rounded shadow mb-8 sm:mb-2 relative max-w-[360px] w-full bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText ">
         <div class="absolute top-2 right-2 flex space-x-2">
             <button @click="openEditModal">
                 ✏️

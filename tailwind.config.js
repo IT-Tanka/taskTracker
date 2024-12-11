@@ -20,7 +20,8 @@ export default {
           600: '#9678c5',
           900: '#6a4e94',
         },
-        'gray-100-transparent': '#e5e7ebe8', 
+        'gray-dark-transparent': '#8f8994cc', 
+        'gray-light-transparent': '#eaeaeacf', 
         grey:'#6f7b8c' 
       },
       backgroundImage: {

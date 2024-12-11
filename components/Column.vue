@@ -1,5 +1,5 @@
 <template>
-    <div class="column flex-1 bg-gray-100-transparent p-4 rounded ">
+    <div class="column flex-1 bg-gray-light-transparent dark:bg-gray-dark-transparent p-4 rounded ">
         <div class="flex justify-between items-center mb-4 relative">
             <h2 class="text-lg font-bold max-w-[70%]">{{ title }}</h2>
             <button @click="openCreateModal" class="bg-customPurple-900 text-white px-2 py-1 rounded absolute top-0 right-0">
@@ -9,7 +9,7 @@
         <p v-if="!tasks.length" class="text-gray-500">No tasks available</p>
         <draggable :list="tasks" item-key="id"   @change="onDrop" class="h-full flex flex-row sm:flex-col gap-1 overflow-auto"
             :group="{ name: 'tasks', pull: 'clone', put: true }">
-            <template #item="{ element }">
+            <template #item="{ element }" >
                 <TaskCard :task="element" />
             </template>
         </draggable>
